@@ -1,6 +1,4 @@
-// Jason Thai
-// Gerardo Peregrina
-// Miguel Tlatelpa
+
 // Duck Hunt
 
 #include <iostream>
