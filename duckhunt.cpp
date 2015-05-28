@@ -1518,7 +1518,22 @@ if (game->menutest == true)
         glVertex2i( w, h);
         glVertex2i( w,-h);
         glEnd();
-        ggprint13(&r, 16, 0x00ffffff, text[i]);
+        if (i == 5)
+	ggprint16(&r, 35, 0x00ffffff, text[0]);
+	if (i == 6)
+	ggprint16(&r, 35, 0x00ffffff, text[1]);
+	if (i == 7)
+	ggprint16(&r, 35, 0x00ffffff, text[2]);
+	r.bot = s->height - 120;
+	r.left = s->width - 170;
+	if (i == 5)
+	ggprint16(&r, 35, 0x00ffffff, "   Key \" 1 \"");
+	if (i == 6)
+	ggprint16(&r, 35, 0x00ffffff, "   Key \" 2 \"");
+	if (i == 7)
+	ggprint16(&r, 35, 0x00ffffff, "   Key \" Esc \"");
+        
+        //ggprint13(&r, 16, 0x00ffffff, text[i]);
        // r.bot = s->height - 120;
        // r.left = s->width - 170;
        // ggprint16(&r, 35, 0x00ffffff, "TESTING");
